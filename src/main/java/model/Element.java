@@ -4,10 +4,7 @@
  */
 package model;
 
-/**
- *
- * @author huypd
- */
+
 public class Element {
     public int size_array;
     public int[] array;

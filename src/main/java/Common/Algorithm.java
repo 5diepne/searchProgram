@@ -4,10 +4,7 @@
  */
 package Common;
 
-/**
- *
- * @author huypd
- */
+
 public class Algorithm {
     public void buddleSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -73,6 +70,9 @@ public class Algorithm {
             return binarySearch(array, value, middle + 1, right);
         }
     }*/
+    
+    
+    //------------------------- binary search ---------------------------
     public int binarySearch(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
@@ -89,6 +89,14 @@ public class Algorithm {
             }
         }
 
+        return -1; // target not found
+    }
+    
+    //-------------------- linear search ---------------------------
+    public int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) 
+            if (arr[i] == target)
+                return i;
         return -1; // target not found
     }
 }

@@ -5,14 +5,11 @@
 package Main;
 
 import Common.Library;
+import controller.SearchProgramming;
 import model.Element;
-import controller.SortProgramming;
 
-/**
- *
- * @author huypd
- */
-public class Project1 {
+
+public class Project2 {
 
     public static void main(String[] args) {
         Library library = new Library();
@@ -21,6 +18,6 @@ public class Project1 {
         element.setSize_array(library.getInt("Enter number of array", 1, 100));
         //2. Create array by generate random integer in range
         element.setArray(library.createArray(element.size_array));
-        new SortProgramming(element).run();
+        new SearchProgramming(element).run();
     }
 }
